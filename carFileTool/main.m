@@ -87,7 +87,7 @@
 
 
 #import <objc/runtime.h>
-#import <Opee/Opee.h>
+//#import <Opee/Opee.h>
 #import "CUIPSDGradientEvaluator.h"
 #import "CUIPSDGradient.h"
 #import "CUIPSDGradientColorStop.h"
@@ -103,7 +103,7 @@ void CGImageWriteToFile(CGImageRef image, NSString *path)
     CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:path];
     CGImageDestinationRef destination = CGImageDestinationCreateWithURL(url, kUTTypePNG, 1, NULL);
     CGImageDestinationAddImage(destination, image, nil);
- 
+    
     if (!CGImageDestinationFinalize(destination)) {
         NSLog(@"Failed to write image to %@", path);
     }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247F9CCA1A34390E00EC03A7 /* NSColor+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98319E199BB9FD00739B89 /* NSColor+Pasteboard.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		247F9CCC1A343B7C00EC03A7 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 247F9CCB1A343B7C00EC03A7 /* AppIcon.icns */; };
+		247F9CCE1A34407200EC03A7 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247F9CCD1A34407200EC03A7 /* Preferences.xib */; };
 		FA0A02F1199AD112000F56A2 /* CFTAsset+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A02F0199AD112000F56A2 /* CFTAsset+Pasteboard.m */; };
 		FA0A02F7199AD1CC000F56A2 /* CFTEffectWrapper+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A02F6199AD1CC000F56A2 /* CFTEffectWrapper+Pasteboard.m */; };
 		FA0A02FA199AD8B8000F56A2 /* CFTGradient+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A02F9199AD8B8000F56A2 /* CFTGradient+Pasteboard.m */; };
@@ -24,7 +27,6 @@
 		FA7C1EEF199ED87500AE156A /* TELayerEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C1EEE199ED87500AE156A /* TELayerEffectsViewController.m */; };
 		FA7C1EF1199FFE4400AE156A /* CFTEffectWrapper+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A02F6199AD1CC000F56A2 /* CFTEffectWrapper+Pasteboard.m */; };
 		FA7C1EF2199FFE4400AE156A /* CFTGradient+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A02F9199AD8B8000F56A2 /* CFTGradient+Pasteboard.m */; };
-		FA7C1EF3199FFE4400AE156A /* NSColor+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98319E199BB9FD00739B89 /* NSColor+Pasteboard.m */; };
 		FA7C1EF619A005D700AE156A /* CFTAsset+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C1EF519A005D700AE156A /* CFTAsset+Coding.m */; };
 		FA7C1EFC19A0093800AE156A /* CFTAsset+IKImageBrowserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C1EFB19A0093800AE156A /* CFTAsset+IKImageBrowserItem.m */; };
 		FA98319F199BB9FD00739B89 /* NSColor+Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98319E199BB9FD00739B89 /* NSColor+Pasteboard.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -74,6 +76,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		247F9CCB1A343B7C00EC03A7 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = SOURCE_ROOT; };
+		247F9CCD1A34407200EC03A7 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Preferences.xib; path = src/models/Preferences.xib; sourceTree = "<group>"; };
 		FA0A02EF199AD112000F56A2 /* CFTAsset+Pasteboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CFTAsset+Pasteboard.h"; path = "src/categories/CFTAsset+Pasteboard.h"; sourceTree = "<group>"; };
 		FA0A02F0199AD112000F56A2 /* CFTAsset+Pasteboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CFTAsset+Pasteboard.m"; path = "src/categories/CFTAsset+Pasteboard.m"; sourceTree = "<group>"; };
 		FA0A02F5199AD1CC000F56A2 /* CFTEffectWrapper+Pasteboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CFTEffectWrapper+Pasteboard.h"; path = "src/categories/CFTEffectWrapper+Pasteboard.h"; sourceTree = "<group>"; };
@@ -294,6 +298,7 @@
 				FACFC3491995A3D300ED936C /* TEDocument.h */,
 				FACFC34A1995A3D300ED936C /* TEDocument.m */,
 				FACFC34B1995A3D300ED936C /* TEDocument.xib */,
+				247F9CCD1A34407200EC03A7 /* Preferences.xib */,
 				FACFC3541995BA9400ED936C /* TEElementViewController.h */,
 				FACFC3551995BA9400ED936C /* TEElementViewController.m */,
 				FAAD570E19994D4600229C3D /* Elements.xib */,
@@ -309,6 +314,7 @@
 				FAEC5293199D401800045AFA /* Views */,
 				FAEC5292199D401200045AFA /* Categories */,
 				FACFC3281995A21700ED936C /* Images.xcassets */,
+				247F9CCB1A343B7C00EC03A7 /* AppIcon.icns */,
 				FACFC32A1995A21700ED936C /* MainMenu.xib */,
 				FACFC33F1995A22A00ED936C /* Supporting Files */,
 			);
@@ -417,7 +423,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Alexander Zielenski";
+				ORGANIZATIONNAME = VICEGIRLS;
 				TargetAttributes = {
 					FACFC2C6199485E900ED936C = {
 						CreatedOnToolsVersion = 6.0;
@@ -453,8 +459,10 @@
 			files = (
 				FA51074119AEBECB002A1C66 /* colors.plist in Resources */,
 				FACFC34D1995A3D300ED936C /* TEDocument.xib in Resources */,
+				247F9CCE1A34407200EC03A7 /* Preferences.xib in Resources */,
 				FACFC3291995A21700ED936C /* Images.xcassets in Resources */,
 				FA7B5F79199600FF00D0B2AD /* Detail.xib in Resources */,
+				247F9CCC1A343B7C00EC03A7 /* AppIcon.icns in Resources */,
 				FAAD570F19994D4600229C3D /* Elements.xib in Resources */,
 				FACFC32C1995A21700ED936C /* MainMenu.xib in Resources */,
 			);
@@ -498,11 +506,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247F9CCA1A34390E00EC03A7 /* NSColor+Pasteboard.m in Sources */,
 				FAEC528F199C874100045AFA /* CUIThemeGradient+Radial.m in Sources */,
 				FA7C1EF1199FFE4400AE156A /* CFTEffectWrapper+Pasteboard.m in Sources */,
 				FA7C1EF2199FFE4400AE156A /* CFTGradient+Pasteboard.m in Sources */,
 				FAEC5282199C7A9400045AFA /* ZKSwizzle.m in Sources */,
-				FA7C1EF3199FFE4400AE156A /* NSColor+Pasteboard.m in Sources */,
 				FACFC2EF19955F6800ED936C /* CFTDefines.m in Sources */,
 				FACFC2CB199485E900ED936C /* main.m in Sources */,
 				FA6BEDB91999D5C3006BF951 /* CFTEffectWrapper.m in Sources */,
@@ -662,6 +670,7 @@
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -669,8 +678,6 @@
 		FACFC33A1995A21700ED936C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,8 +696,6 @@
 		FACFC33B1995A21700ED936C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
