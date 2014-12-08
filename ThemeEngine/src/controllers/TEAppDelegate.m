@@ -28,6 +28,10 @@
     return NO;
 }
 
+-(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)app {
+    return YES;
+}
+
 - (void)applicationWillTerminate:(NSNotification *)notification {
     [[NSFileManager defaultManager] removeItemAtPath:[NSTemporaryDirectory() stringByAppendingPathComponent:NSBundle.mainBundle.bundleIdentifier] error:nil];
 }
